@@ -1,0 +1,47 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  height: 100vh;
+  width: 400vw;
+  overflow: hidden;
+  animation:slide 8s linear infinite;
+}
+.slide{
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10em;
+  color: white;
+}
+.slide:nth-child(1){background: red;}
+.slide:nth-child(2){background: blue;}
+.slide:nth-child(3){background: green;}
+.slide:nth-child(4){background: yellow;}
+
+@keyframes slide{
+  0%{margin-left: 0;}
+  25%{margin-left: 0;}
+  35%{margin-left: -100vw;}
+  50%{margin-left: -100vw;}
+  60%{margin-left: -200vw;}
+  75%{margin-left: -200vw;}
+  85%{margin-left: -300vw;}
+  100%{margin-left: -300vw;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
